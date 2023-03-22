@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BmiResult">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your BMI is"/>
+
+    <TextView
+        android:id="@+id/tvUnderweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Below 18.5 is Underweight"
+        android:textAlignment="center"
+        android:textSize="20sp"
+       />
+
+    <TextView
+        android:id="@+id/tvNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Between 18.5 to 25 is Normal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvOverweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Between 25 to 30 is Overweight"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvObese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="More than 30 is Obsese"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="BACK"
+         />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="SHARE"
+         />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+         />
+
+
+
+
+
+
+
+
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.github.mikephil.charting.charts.PieChart>
+</RelativeLayout>
